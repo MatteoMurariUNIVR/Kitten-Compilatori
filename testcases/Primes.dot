@@ -1,0 +1,327 @@
+digraph Primes {
+size = "11,7.5";
+rotate = 90
+node110 [ label = "ClassDefinition"];
+symbol_Primes [label = "Primes" fontname = "Times-Italic" shape = box]
+node110 -> symbol_Primes [label = "name" fontsize = 8]
+symbol_Object [label = "Object" fontname = "Times-Italic" shape = box]
+node110 -> symbol_Object [label = "superclassName" fontsize = 8]
+node109 [ label = "FieldDeclaration"];
+node0 [ label = "IntTypeExpression [int]"];
+node109 -> node0 [label = "type" fontsize = 8]
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node109 -> symbol_next [label = "name" fontsize = 8]
+node108 [ label = "ConstructorDeclaration"];
+node4 [ label = "Assignment"];
+node2 [ label = "FieldAccess [int]\nreferences Primes.next:int"];
+node1 [ label = "Variable [Primes]"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node1 -> symbol_this [label = "name" fontsize = 8]
+node2 -> node1 [label = "receiver" fontsize = 8]
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node2 -> symbol_next [label = "name" fontsize = 8]
+node4 -> node2 [label = "lvalue" fontsize = 8]
+node3 [ label = "IntLiteral [int]: 2"];
+node4 -> node3 [label = "rvalue" fontsize = 8]
+node108 -> node4 [label = "body" fontsize = 8]
+node107 [ label = "ConstructorDeclaration"];
+node6 [ label = "FormalParameters"];
+node5 [ label = "IntTypeExpression [int]"];
+node6 -> node5 [label = "type" fontsize = 8]
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node6 -> symbol_next [label = "name" fontsize = 8]
+node107 -> node6 [label = "formals" fontsize = 8]
+node10 [ label = "Assignment"];
+node8 [ label = "FieldAccess [int]\nreferences Primes.next:int"];
+node7 [ label = "Variable [Primes]"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node7 -> symbol_this [label = "name" fontsize = 8]
+node8 -> node7 [label = "receiver" fontsize = 8]
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node8 -> symbol_next [label = "name" fontsize = 8]
+node10 -> node8 [label = "lvalue" fontsize = 8]
+node9 [ label = "Variable [int]"];
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node9 -> symbol_next [label = "name" fontsize = 8]
+node10 -> node9 [label = "rvalue" fontsize = 8]
+node107 -> node10 [label = "body" fontsize = 8]
+node106 [ label = "MethodDeclaration"];
+node11 [ label = "IntTypeExpression [int]"];
+node106 -> node11 [label = "returnType" fontsize = 8]
+symbol_getHead [label = "getHead" fontname = "Times-Italic" shape = box]
+node106 -> symbol_getHead [label = "name" fontsize = 8]
+node14 [ label = "Return"];
+node13 [ label = "FieldAccess [int]\nreferences Primes.next:int"];
+node12 [ label = "Variable [Primes]"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node12 -> symbol_this [label = "name" fontsize = 8]
+node13 -> node12 [label = "receiver" fontsize = 8]
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node13 -> symbol_next [label = "name" fontsize = 8]
+node14 -> node13 [label = "returned" fontsize = 8]
+node106 -> node14 [label = "body" fontsize = 8]
+node105 [ label = "MethodDeclaration"];
+node15 [ label = "ClassTypeExpression [Primes]"];
+symbol_Primes [label = "Primes" fontname = "Times-Italic" shape = box]
+node15 -> symbol_Primes [label = "name" fontsize = 8]
+node105 -> node15 [label = "returnType" fontsize = 8]
+symbol_getTail [label = "getTail" fontname = "Times-Italic" shape = box]
+node105 -> symbol_getTail [label = "name" fontsize = 8]
+node39 [ label = "LocalScope"];
+node38 [ label = "CommandSeq"];
+node21 [ label = "LocalDeclaration"];
+node16 [ label = "IntTypeExpression [int]"];
+node21 -> node16 [label = "type" fontsize = 8]
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node21 -> symbol_next [label = "name" fontsize = 8]
+node20 [ label = "Addition [int]"];
+node18 [ label = "FieldAccess [int]\nreferences Primes.next:int"];
+node17 [ label = "Variable [Primes]"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node17 -> symbol_this [label = "name" fontsize = 8]
+node18 -> node17 [label = "receiver" fontsize = 8]
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node18 -> symbol_next [label = "name" fontsize = 8]
+node20 -> node18 [label = "left" fontsize = 8]
+node19 [ label = "IntLiteral [int]: 1"];
+node20 -> node19 [label = "right" fontsize = 8]
+node21 -> node20 [label = "initialiser" fontsize = 8]
+node38 -> node21 [label = "first" fontsize = 8]
+node37 [ label = "CommandSeq"];
+node32 [ label = "While"];
+node26 [ label = "Not [boolean]"];
+node25 [ label = "MethodCallExpression [boolean]\nreferences Primes.isPrime(int):boolean"];
+node22 [ label = "Variable [Primes]"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node22 -> symbol_this [label = "name" fontsize = 8]
+node25 -> node22 [label = "receiver" fontsize = 8]
+symbol_isPrime [label = "isPrime" fontname = "Times-Italic" shape = box]
+node25 -> symbol_isPrime [label = "name" fontsize = 8]
+node24 [ label = "ExpressionSeq"];
+node23 [ label = "Variable [int]"];
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node23 -> symbol_next [label = "name" fontsize = 8]
+node24 -> node23 [label = "head" fontsize = 8]
+node25 -> node24 [label = "actuals" fontsize = 8]
+node26 -> node25 [label = "expression" fontsize = 8]
+node32 -> node26 [label = "condition" fontsize = 8]
+node31 [ label = "Assignment"];
+node27 [ label = "Variable [int]"];
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node27 -> symbol_next [label = "name" fontsize = 8]
+node31 -> node27 [label = "lvalue" fontsize = 8]
+node30 [ label = "Addition [int]"];
+node28 [ label = "Variable [int]"];
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node28 -> symbol_next [label = "name" fontsize = 8]
+node30 -> node28 [label = "left" fontsize = 8]
+node29 [ label = "IntLiteral [int]: 1"];
+node30 -> node29 [label = "right" fontsize = 8]
+node31 -> node30 [label = "rvalue" fontsize = 8]
+node32 -> node31 [label = "body" fontsize = 8]
+node37 -> node32 [label = "first" fontsize = 8]
+node36 [ label = "Return"];
+node35 [ label = "NewObject [Primes]\nreferences Primes(int)"];
+symbol_Primes [label = "Primes" fontname = "Times-Italic" shape = box]
+node35 -> symbol_Primes [label = "className" fontsize = 8]
+node34 [ label = "ExpressionSeq"];
+node33 [ label = "Variable [int]"];
+symbol_next [label = "next" fontname = "Times-Italic" shape = box]
+node33 -> symbol_next [label = "name" fontsize = 8]
+node34 -> node33 [label = "head" fontsize = 8]
+node35 -> node34 [label = "actuals" fontsize = 8]
+node36 -> node35 [label = "returned" fontsize = 8]
+node37 -> node36 [label = "second" fontsize = 8]
+node38 -> node37 [label = "second" fontsize = 8]
+node39 -> node38 [label = "body" fontsize = 8]
+node105 -> node39 [label = "body" fontsize = 8]
+node104 [ label = "MethodDeclaration"];
+node40 [ label = "BooleanTypeExpression [boolean]"];
+node104 -> node40 [label = "returnType" fontsize = 8]
+symbol_isPrime [label = "isPrime" fontname = "Times-Italic" shape = box]
+node104 -> symbol_isPrime [label = "name" fontsize = 8]
+node42 [ label = "FormalParameters"];
+node41 [ label = "IntTypeExpression [int]"];
+node42 -> node41 [label = "type" fontsize = 8]
+symbol_n [label = "n" fontname = "Times-Italic" shape = box]
+node42 -> symbol_n [label = "name" fontsize = 8]
+node104 -> node42 [label = "formals" fontsize = 8]
+node69 [ label = "LocalScope"];
+node68 [ label = "CommandSeq"];
+node45 [ label = "LocalDeclaration"];
+node43 [ label = "IntTypeExpression [int]"];
+node45 -> node43 [label = "type" fontsize = 8]
+symbol_divisor [label = "divisor" fontname = "Times-Italic" shape = box]
+node45 -> symbol_divisor [label = "name" fontsize = 8]
+node44 [ label = "IntLiteral [int]: 2"];
+node45 -> node44 [label = "initialiser" fontsize = 8]
+node68 -> node45 [label = "first" fontsize = 8]
+node67 [ label = "CommandSeq"];
+node64 [ label = "While"];
+node48 [ label = "LessThan [boolean]"];
+node46 [ label = "Variable [int]"];
+symbol_divisor [label = "divisor" fontname = "Times-Italic" shape = box]
+node46 -> symbol_divisor [label = "name" fontsize = 8]
+node48 -> node46 [label = "left" fontsize = 8]
+node47 [ label = "Variable [int]"];
+symbol_n [label = "n" fontname = "Times-Italic" shape = box]
+node47 -> symbol_n [label = "name" fontsize = 8]
+node48 -> node47 [label = "right" fontsize = 8]
+node64 -> node48 [label = "condition" fontsize = 8]
+node63 [ label = "IfThenElse"];
+node55 [ label = "Equal [boolean]"];
+node53 [ label = "Multiplication [int]"];
+node51 [ label = "Division [int]"];
+node49 [ label = "Variable [int]"];
+symbol_n [label = "n" fontname = "Times-Italic" shape = box]
+node49 -> symbol_n [label = "name" fontsize = 8]
+node51 -> node49 [label = "left" fontsize = 8]
+node50 [ label = "Variable [int]"];
+symbol_divisor [label = "divisor" fontname = "Times-Italic" shape = box]
+node50 -> symbol_divisor [label = "name" fontsize = 8]
+node51 -> node50 [label = "right" fontsize = 8]
+node53 -> node51 [label = "left" fontsize = 8]
+node52 [ label = "Variable [int]"];
+symbol_divisor [label = "divisor" fontname = "Times-Italic" shape = box]
+node52 -> symbol_divisor [label = "name" fontsize = 8]
+node53 -> node52 [label = "right" fontsize = 8]
+node55 -> node53 [label = "left" fontsize = 8]
+node54 [ label = "Variable [int]"];
+symbol_n [label = "n" fontname = "Times-Italic" shape = box]
+node54 -> symbol_n [label = "name" fontsize = 8]
+node55 -> node54 [label = "right" fontsize = 8]
+node63 -> node55 [label = "condition" fontsize = 8]
+node57 [ label = "Return"];
+node56 [ label = "False [boolean]"];
+node57 -> node56 [label = "returned" fontsize = 8]
+node63 -> node57 [label = "then" fontsize = 8]
+node62 [ label = "Assignment"];
+node58 [ label = "Variable [int]"];
+symbol_divisor [label = "divisor" fontname = "Times-Italic" shape = box]
+node58 -> symbol_divisor [label = "name" fontsize = 8]
+node62 -> node58 [label = "lvalue" fontsize = 8]
+node61 [ label = "Addition [int]"];
+node59 [ label = "Variable [int]"];
+symbol_divisor [label = "divisor" fontname = "Times-Italic" shape = box]
+node59 -> symbol_divisor [label = "name" fontsize = 8]
+node61 -> node59 [label = "left" fontsize = 8]
+node60 [ label = "IntLiteral [int]: 1"];
+node61 -> node60 [label = "right" fontsize = 8]
+node62 -> node61 [label = "rvalue" fontsize = 8]
+node63 -> node62 [label = "_else" fontsize = 8]
+node64 -> node63 [label = "body" fontsize = 8]
+node67 -> node64 [label = "first" fontsize = 8]
+node66 [ label = "Return"];
+node65 [ label = "True [boolean]"];
+node66 -> node65 [label = "returned" fontsize = 8]
+node67 -> node66 [label = "second" fontsize = 8]
+node68 -> node67 [label = "second" fontsize = 8]
+node69 -> node68 [label = "body" fontsize = 8]
+node104 -> node69 [label = "body" fontsize = 8]
+node103 [ label = "MethodDeclaration"];
+node70 [ label = "VoidTypeExpression [void]"];
+node103 -> node70 [label = "returnType" fontsize = 8]
+symbol_main [label = "main" fontname = "Times-Italic" shape = box]
+node103 -> symbol_main [label = "name" fontsize = 8]
+node102 [ label = "LocalScope"];
+node101 [ label = "CommandSeq"];
+node73 [ label = "LocalDeclaration"];
+node71 [ label = "ClassTypeExpression [Primes]"];
+symbol_Primes [label = "Primes" fontname = "Times-Italic" shape = box]
+node71 -> symbol_Primes [label = "name" fontsize = 8]
+node73 -> node71 [label = "type" fontsize = 8]
+symbol_p [label = "p" fontname = "Times-Italic" shape = box]
+node73 -> symbol_p [label = "name" fontsize = 8]
+node72 [ label = "NewObject [Primes]\nreferences Primes()"];
+symbol_Primes [label = "Primes" fontname = "Times-Italic" shape = box]
+node72 -> symbol_Primes [label = "className" fontsize = 8]
+node73 -> node72 [label = "initialiser" fontsize = 8]
+node101 -> node73 [label = "first" fontsize = 8]
+node100 [ label = "For"];
+node76 [ label = "LocalDeclaration"];
+node74 [ label = "IntTypeExpression [int]"];
+node76 -> node74 [label = "type" fontsize = 8]
+symbol_count [label = "count" fontname = "Times-Italic" shape = box]
+node76 -> symbol_count [label = "name" fontsize = 8]
+node75 [ label = "IntLiteral [int]: 1"];
+node76 -> node75 [label = "initialiser" fontsize = 8]
+node100 -> node76 [label = "initialisation" fontsize = 8]
+node79 [ label = "LessThanOrEqual [boolean]"];
+node77 [ label = "Variable [int]"];
+symbol_count [label = "count" fontname = "Times-Italic" shape = box]
+node77 -> symbol_count [label = "name" fontsize = 8]
+node79 -> node77 [label = "left" fontsize = 8]
+node78 [ label = "IntLiteral [int]: 100"];
+node79 -> node78 [label = "right" fontsize = 8]
+node100 -> node79 [label = "condition" fontsize = 8]
+node84 [ label = "Assignment"];
+node80 [ label = "Variable [int]"];
+symbol_count [label = "count" fontname = "Times-Italic" shape = box]
+node80 -> symbol_count [label = "name" fontsize = 8]
+node84 -> node80 [label = "lvalue" fontsize = 8]
+node83 [ label = "Addition [int]"];
+node81 [ label = "Variable [int]"];
+symbol_count [label = "count" fontname = "Times-Italic" shape = box]
+node81 -> symbol_count [label = "name" fontsize = 8]
+node83 -> node81 [label = "left" fontsize = 8]
+node82 [ label = "IntLiteral [int]: 1"];
+node83 -> node82 [label = "right" fontsize = 8]
+node84 -> node83 [label = "rvalue" fontsize = 8]
+node100 -> node84 [label = "update" fontsize = 8]
+node99 [ label = "LocalScope"];
+node98 [ label = "CommandSeq"];
+node93 [ label = "MethodCallCommand\nreferences String.output():void"];
+node92 [ label = "MethodCallExpression [String]\nreferences String.concat(String):String"];
+node89 [ label = "MethodCallExpression [String]\nreferences String.concat(int):String"];
+node85 [ label = "StringLiteral [String]: "];
+node89 -> node85 [label = "receiver" fontsize = 8]
+symbol_concat [label = "concat" fontname = "Times-Italic" shape = box]
+node89 -> symbol_concat [label = "name" fontsize = 8]
+node88 [ label = "ExpressionSeq"];
+node87 [ label = "MethodCallExpression [int]\nreferences Primes.getHead():int"];
+node86 [ label = "Variable [Primes]"];
+symbol_p [label = "p" fontname = "Times-Italic" shape = box]
+node86 -> symbol_p [label = "name" fontsize = 8]
+node87 -> node86 [label = "receiver" fontsize = 8]
+symbol_getHead [label = "getHead" fontname = "Times-Italic" shape = box]
+node87 -> symbol_getHead [label = "name" fontsize = 8]
+node88 -> node87 [label = "head" fontsize = 8]
+node89 -> node88 [label = "actuals" fontsize = 8]
+node92 -> node89 [label = "receiver" fontsize = 8]
+symbol_concat [label = "concat" fontname = "Times-Italic" shape = box]
+node92 -> symbol_concat [label = "name" fontsize = 8]
+node91 [ label = "ExpressionSeq"];
+node90 [ label = "StringLiteral [String]: \\n"];
+node91 -> node90 [label = "head" fontsize = 8]
+node92 -> node91 [label = "actuals" fontsize = 8]
+node93 -> node92 [label = "receiver" fontsize = 8]
+symbol_output [label = "output" fontname = "Times-Italic" shape = box]
+node93 -> symbol_output [label = "name" fontsize = 8]
+node98 -> node93 [label = "first" fontsize = 8]
+node97 [ label = "Assignment"];
+node94 [ label = "Variable [Primes]"];
+symbol_p [label = "p" fontname = "Times-Italic" shape = box]
+node94 -> symbol_p [label = "name" fontsize = 8]
+node97 -> node94 [label = "lvalue" fontsize = 8]
+node96 [ label = "MethodCallExpression [Primes]\nreferences Primes.getTail():Primes"];
+node95 [ label = "Variable [Primes]"];
+symbol_p [label = "p" fontname = "Times-Italic" shape = box]
+node95 -> symbol_p [label = "name" fontsize = 8]
+node96 -> node95 [label = "receiver" fontsize = 8]
+symbol_getTail [label = "getTail" fontname = "Times-Italic" shape = box]
+node96 -> symbol_getTail [label = "name" fontsize = 8]
+node97 -> node96 [label = "rvalue" fontsize = 8]
+node98 -> node97 [label = "second" fontsize = 8]
+node99 -> node98 [label = "body" fontsize = 8]
+node100 -> node99 [label = "body" fontsize = 8]
+node101 -> node100 [label = "second" fontsize = 8]
+node102 -> node101 [label = "body" fontsize = 8]
+node103 -> node102 [label = "body" fontsize = 8]
+node104 -> node103 [label = "next" fontsize = 8 style = bold]
+node105 -> node104 [label = "next" fontsize = 8 style = bold]
+node106 -> node105 [label = "next" fontsize = 8 style = bold]
+node107 -> node106 [label = "next" fontsize = 8 style = bold]
+node108 -> node107 [label = "next" fontsize = 8 style = bold]
+node109 -> node108 [label = "next" fontsize = 8 style = bold]
+node110 -> node109 [label = "declarations" fontsize = 8]
+}

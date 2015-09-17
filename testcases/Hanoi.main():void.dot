@@ -1,0 +1,4 @@
+digraph "Hanoi.main():void" {
+size = "11,7.5";
+codeblock_0 [ shape = box, label = "block 0\nnew Hanoi\ndup Hanoi\ncall Hanoi() [Hanoi()]\nconst 5\nconst 1\nconst 2\nconst 3\ncall Hanoi.solve(int,int,int,int):void [Hanoi.solve(int,int,int,int):void]\nreturn void"];
+}

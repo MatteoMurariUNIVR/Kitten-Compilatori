@@ -1,0 +1,10 @@
+digraph "Led.culattone2():void" {
+size = "11,7.5";
+codeblock_10 [ shape = box, label = "block 10\nconst 0\nstore 1 of type int\nnew Led\ndup Led\ncall Led() [Led()]\nstore 2 of type Led\nload 2 of type Led\ncall Led.on():void [Led.on():void]\nload 2 of type Led\ncall Led.isOn():boolean [Led.isOn():boolean]"];
+codeblock_9 [ shape = box, label = "block 9\nif_false\nnewstring failed at 42::4\ncall String.output():void [String.output():void]\nconst 1\nreturn int"];
+codeblock_8 [ shape = box, label = "block 8\nnop"];
+codeblock_9->codeblock_8 [color = blue label = "" fontsize = 8]
+codeblock_10->codeblock_9 [color = blue label = "" fontsize = 8]
+codeblock_7 [ shape = box, label = "block 7\nif_true\nnewstring passed\ncall String.output():void [String.output():void]\nconst 0\nreturn int"];
+codeblock_10->codeblock_7 [color = blue label = "" fontsize = 8]
+}

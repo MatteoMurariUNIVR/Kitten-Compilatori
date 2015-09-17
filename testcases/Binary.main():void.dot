@@ -1,0 +1,4 @@
+digraph "Binary.main():void" {
+size = "11,7.5";
+codeblock_0 [ shape = box, label = "block 0\nnew Binary\ndup Binary\nconst 815\ncall Binary(int) [Binary(int)]\ncall Binary.toString():String [Binary.toString():String]\nnewstring \\n\ncall String.concat(String):String [String.concat(String):String]\ncall String.output():void [String.output():void]\nreturn void"];
+}

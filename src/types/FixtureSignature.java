@@ -1,0 +1,57 @@
+package types;
+
+import javaBytecodeGenerator.JavaClassGenerator;
+import javaBytecodeGenerator.TestClassGenerator;
+
+import org.apache.bcel.Constants;
+import org.apache.bcel.generic.INVOKESTATIC;
+import org.apache.bcel.generic.MethodGen;
+
+import translation.Block;
+import absyn.ClassDefinition;
+import absyn.FixtureDeclaration;
+
+public class FixtureSignature extends CodeSignature
+{	
+	public FixtureSignature(ClassType clazz, String name, FixtureDeclaration abstractSyntax)
+	{
+		super(clazz, VoidType.INSTANCE, TypeList.EMPTY, name, abstractSyntax);
+	}
+
+	@Override
+	protected Block addPrefixToCode(Block code)
+	{
+		return code;
+	}
+	
+	@Override
+    public String toString()
+	{
+		//System.out.println(getDefiningClass() + ".fixture" + ClassDefinition.counterFixtures);
+    	return getDefiningClass() + ".fixture" + ClassDefinition.counterFixtures;
+    }
+	
+    public void createFixture(TestClassGenerator testClassGen)
+    {
+    	MethodGen fixtureGen;
+		fixtureGen=new MethodGen(Constants.ACC_PRIVATE | Constants.ACC_STATIC, // public
+							  org.apache.bcel.generic.Type.VOID, // return type
+							  new org.apache.bcel.generic.Type[]{getDefiningClass().toBCEL()}, // parameters types, if any
+							  null, // parameters names: we do not care
+							  getName(), // fixture's name
+							  testClassGen.getClassName(), // defining class
+							  testClassGen.generateJavaBytecode(getCode()), // bytecode of the fixture
+							  testClassGen.getConstantPool()); // constant pool
+
+		fixtureGen.setMaxStack();
+		fixtureGen.setMaxLocals();
+
+		// we add a fixture to the class that we are generating
+		testClassGen.addMethod(fixtureGen.getMethod());
+    }
+
+    public INVOKESTATIC createINVOKESTATIC(JavaClassGenerator classGen)
+	{
+		return (INVOKESTATIC) createInvokeInstruction(classGen, Constants.INVOKESTATIC);
+	}
+}

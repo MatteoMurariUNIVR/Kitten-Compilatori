@@ -1,0 +1,4 @@
+digraph "String.kit()" {
+size = "11,7.5";
+codeblock_8 [ shape = box, label = "block 8\nload 0 of type String.kit\ncall Object() [Object()]\nreturn void"];
+}

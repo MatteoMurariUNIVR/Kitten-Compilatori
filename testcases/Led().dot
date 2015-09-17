@@ -1,0 +1,4 @@
+digraph "Led()" {
+size = "11,7.5";
+codeblock_1 [ shape = box, label = "block 1\nload 0 of type Led\ncall Object() [Object()]\nreturn void"];
+}

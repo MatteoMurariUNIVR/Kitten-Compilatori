@@ -1,0 +1,9 @@
+digraph Fibonacci {
+size = "11,7.5";
+rotate = 90
+node87 [ label = "ClassDefinition"];
+symbol_Fibonacci [label = "Fibonacci" fontname = "Times-Italic" shape = box]
+node87 -> symbol_Fibonacci [label = "name" fontsize = 8]
+symbol_Object [label = "Object" fontname = "Times-Italic" shape = box]
+node87 -> symbol_Object [label = "superclassName" fontsize = 8]
+}

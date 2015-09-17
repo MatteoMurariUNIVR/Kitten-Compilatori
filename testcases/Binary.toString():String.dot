@@ -1,0 +1,16 @@
+digraph "Binary.toString():String" {
+size = "11,7.5";
+codeblock_19 [ shape = box, label = "block 19\nload 0 of type Binary\ngetfield Binary.tail:Binary\nconst null\nne Binary\nload 0 of type Binary\ngetfield Binary.head:boolean\nand"];
+codeblock_18 [ shape = box, label = "block 18\nif_false\nload 0 of type Binary\ngetfield Binary.tail:Binary\nconst null"];
+codeblock_17 [ shape = box, label = "block 17\nif_cmpeq Binary\nload 0 of type Binary\ngetfield Binary.head:boolean"];
+codeblock_16 [ shape = box, label = "block 16\nif_false\nnewstring 0\nreturn String"];
+codeblock_17->codeblock_16 [color = blue label = "" fontsize = 8]
+codeblock_15 [ shape = box, label = "block 15\nif_true\nnewstring 1\nreturn String"];
+codeblock_17->codeblock_15 [color = blue label = "" fontsize = 8]
+codeblock_18->codeblock_17 [color = blue label = "" fontsize = 8]
+codeblock_14 [ shape = box, label = "block 14\nif_cmpne Binary\nload 0 of type Binary\ngetfield Binary.tail:Binary\ncall Binary.toString():String [Binary.toString():String]\nconst 0\ncall String.concat(int):String [String.concat(int):String]\nreturn String"];
+codeblock_18->codeblock_14 [color = blue label = "" fontsize = 8]
+codeblock_19->codeblock_18 [color = blue label = "" fontsize = 8]
+codeblock_13 [ shape = box, label = "block 13\nif_true\nload 0 of type Binary\ngetfield Binary.tail:Binary\ncall Binary.toString():String [Binary.toString():String]\nconst 1\ncall String.concat(int):String [String.concat(int):String]\nreturn String"];
+codeblock_19->codeblock_13 [color = blue label = "" fontsize = 8]
+}

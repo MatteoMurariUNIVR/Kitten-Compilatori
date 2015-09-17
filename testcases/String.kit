@@ -1,0 +1,41 @@
+/* This class implements Kitten strings. All constructors and methods are
+   implemented through native Java code */
+
+class String {
+  /* crea una stringa vuota: BUILTIN */
+  constructor () {}
+
+  /* clona una stringa */
+  constructor(String other) {}
+
+  /* la lunghezza della stringa */
+  method int length() return 0
+
+  /* converte nell'intero rappresentato dalla stringa */
+  method int toInt() return 0
+
+  /* converte nel float rappresentato dalla stringa */
+  method float toFloat() return 0
+
+  /* vero se e solo se "this" e' uguale a "other" */
+  method boolean equals(String other) return false
+ 
+  /* stampa la stringa a video */
+  method void output() {}
+
+  /* legge una sequenza di caratteri (fino al primo newline)
+     da tastiera e la memorizza nella stringa */
+  method void input() {}
+
+  /* ritorna la concatenazione di "this" e poi "s" */
+  method String concat(String s) return ""
+
+  /* ritorna la concatenazione di "this" e poi "f" */
+  method String concat(float f) return ""
+
+  /* ritorna la concatenazione di "this" e poi "i" */
+  method String concat(int i) return ""
+
+  /* ritorna la concatenazione di "this" e poi "b" */
+  method String concat(boolean b) return ""
+}

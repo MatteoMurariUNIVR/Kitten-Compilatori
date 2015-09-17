@@ -1,0 +1,4 @@
+digraph "Test.main():void" {
+size = "11,7.5";
+codeblock_0 [ shape = box, label = "block 0\nnew Test\ndup Test\ncall Test() [Test()]\nconst 10\ncall Test.loop(int):int [Test.loop(int):int]\npop int\nreturn void"];
+}

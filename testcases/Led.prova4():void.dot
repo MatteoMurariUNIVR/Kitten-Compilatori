@@ -1,0 +1,10 @@
+digraph "Led.prova4():void" {
+size = "11,7.5";
+codeblock_30 [ shape = box, label = "block 30\nconst 11\nstore 1 of type int\nload 1 of type int\nconst 199\nmul int\nstore 1 of type int\nload 1 of type int\nconst 0"];
+codeblock_29 [ shape = box, label = "block 29\nif_cmple int\nnewstring failed at 44::4\ncall String.output():void [String.output():void]\nconst 1\nreturn int"];
+codeblock_28 [ shape = box, label = "block 28\nnop"];
+codeblock_29->codeblock_28 [color = blue label = "" fontsize = 8]
+codeblock_30->codeblock_29 [color = blue label = "" fontsize = 8]
+codeblock_27 [ shape = box, label = "block 27\nif_cmpgt int\nnewstring passed\ncall String.output():void [String.output():void]\nconst 0\nreturn int"];
+codeblock_30->codeblock_27 [color = blue label = "" fontsize = 8]
+}

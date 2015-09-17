@@ -1,0 +1,4 @@
+digraph "TestKitten.main():void" {
+size = "11,7.5";
+codeblock_0 [ shape = box, label = "block 0\nreturn void"];
+}

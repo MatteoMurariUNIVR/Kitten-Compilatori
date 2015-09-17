@@ -1,0 +1,65 @@
+class Led {
+  field boolean state
+
+  constructor() {}
+
+  method void on()
+    this.state := true
+
+  method void off()
+    this.state := false
+
+  method boolean isOn()
+    return this.state
+
+  method boolean isOff()
+    return !this.state
+    
+  fixture
+  	this.state:=true  
+    
+  test prova
+  {
+  	int j:=1;
+  	assert(j<0)
+  }
+  
+  test prova2
+  {
+  	assert(true)
+  } 
+  
+  test prova3
+  {
+  	int k:=15;
+  	k:=k*k;
+  	assert(k<0)
+  }
+  
+    test prova4
+  {
+  	int a:=11;
+  	a:=a*199;
+  	
+  	assert(a>0)
+  }
+  
+  test prova5
+  {
+  	assert(this.state)
+  } 
+  
+  test prova6
+  {
+  	boolean k:=true;
+  	assert(k)
+  }
+  
+  method void main()
+  {
+    Led pg := new Led();
+    pg.on();
+    "tutto ok!\n".output()
+  }
+  
+}

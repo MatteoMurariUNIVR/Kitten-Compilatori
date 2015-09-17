@@ -1,0 +1,10 @@
+digraph "Led.prova5():void" {
+size = "11,7.5";
+codeblock_26 [ shape = box, label = "block 26\nload 0 of type Led\ngetfield Led.state:boolean"];
+codeblock_25 [ shape = box, label = "block 25\nif_false\nnewstring failed at 49::4\ncall String.output():void [String.output():void]\nconst 1\nreturn int"];
+codeblock_24 [ shape = box, label = "block 24\nnop"];
+codeblock_25->codeblock_24 [color = blue label = "" fontsize = 8]
+codeblock_26->codeblock_25 [color = blue label = "" fontsize = 8]
+codeblock_23 [ shape = box, label = "block 23\nif_true\nnewstring passed\ncall String.output():void [String.output():void]\nconst 0\nreturn int"];
+codeblock_26->codeblock_23 [color = blue label = "" fontsize = 8]
+}

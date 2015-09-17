@@ -1,0 +1,4 @@
+digraph "Led.fixture1" {
+size = "11,7.5";
+codeblock_3 [ shape = box, label = "block 3\nload 0 of type Led\nconst true\nputfield Led.state:boolean\nreturn void"];
+}

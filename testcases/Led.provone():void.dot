@@ -1,0 +1,10 @@
+digraph "Led.provone():void" {
+size = "11,7.5";
+codeblock_18 [ shape = box, label = "block 18\nconst true"];
+codeblock_17 [ shape = box, label = "block 17\nif_false\nnewstring failed at 26::4\ncall String.output():void [String.output():void]\nconst 1\nreturn int"];
+codeblock_16 [ shape = box, label = "block 16\nnop"];
+codeblock_17->codeblock_16 [color = blue label = "" fontsize = 8]
+codeblock_18->codeblock_17 [color = blue label = "" fontsize = 8]
+codeblock_15 [ shape = box, label = "block 15\nif_true\nnewstring passed\ncall String.output():void [String.output():void]\nconst 0\nreturn int"];
+codeblock_18->codeblock_15 [color = blue label = "" fontsize = 8]
+}

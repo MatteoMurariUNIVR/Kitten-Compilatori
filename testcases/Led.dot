@@ -1,0 +1,113 @@
+digraph Led {
+size = "11,7.5";
+rotate = 90
+node37 [ label = "ClassDefinition"];
+symbol_Led [label = "Led" fontname = "Times-Italic" shape = box]
+node37 -> symbol_Led [label = "name" fontsize = 8]
+symbol_Object [label = "Object" fontname = "Times-Italic" shape = box]
+node37 -> symbol_Object [label = "superclassName" fontsize = 8]
+node36 [ label = "FieldDeclaration"];
+node0 [ label = "BooleanTypeExpression"];
+node36 -> node0 [label = "type" fontsize = 8]
+symbol_state [label = "state" fontname = "Times-Italic" shape = box]
+node36 -> symbol_state [label = "name" fontsize = 8]
+node35 [ label = "ConstructorDeclaration"];
+node1 [ label = "Skip"];
+node35 -> node1 [label = "body" fontsize = 8]
+node34 [ label = "MethodDeclaration"];
+node2 [ label = "VoidTypeExpression"];
+node34 -> node2 [label = "returnType" fontsize = 8]
+symbol_on [label = "on" fontname = "Times-Italic" shape = box]
+node34 -> symbol_on [label = "name" fontsize = 8]
+node6 [ label = "Assignment"];
+node4 [ label = "FieldAccess"];
+node3 [ label = "Variable"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node3 -> symbol_this [label = "name" fontsize = 8]
+node4 -> node3 [label = "receiver" fontsize = 8]
+symbol_state [label = "state" fontname = "Times-Italic" shape = box]
+node4 -> symbol_state [label = "name" fontsize = 8]
+node6 -> node4 [label = "lvalue" fontsize = 8]
+node5 [ label = "True"];
+node6 -> node5 [label = "rvalue" fontsize = 8]
+node34 -> node6 [label = "body" fontsize = 8]
+node33 [ label = "MethodDeclaration"];
+node7 [ label = "VoidTypeExpression"];
+node33 -> node7 [label = "returnType" fontsize = 8]
+symbol_off [label = "off" fontname = "Times-Italic" shape = box]
+node33 -> symbol_off [label = "name" fontsize = 8]
+node11 [ label = "Assignment"];
+node9 [ label = "FieldAccess"];
+node8 [ label = "Variable"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node8 -> symbol_this [label = "name" fontsize = 8]
+node9 -> node8 [label = "receiver" fontsize = 8]
+symbol_state [label = "state" fontname = "Times-Italic" shape = box]
+node9 -> symbol_state [label = "name" fontsize = 8]
+node11 -> node9 [label = "lvalue" fontsize = 8]
+node10 [ label = "False"];
+node11 -> node10 [label = "rvalue" fontsize = 8]
+node33 -> node11 [label = "body" fontsize = 8]
+node32 [ label = "MethodDeclaration"];
+node12 [ label = "BooleanTypeExpression"];
+node32 -> node12 [label = "returnType" fontsize = 8]
+symbol_isOn [label = "isOn" fontname = "Times-Italic" shape = box]
+node32 -> symbol_isOn [label = "name" fontsize = 8]
+node15 [ label = "Return"];
+node14 [ label = "FieldAccess"];
+node13 [ label = "Variable"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node13 -> symbol_this [label = "name" fontsize = 8]
+node14 -> node13 [label = "receiver" fontsize = 8]
+symbol_state [label = "state" fontname = "Times-Italic" shape = box]
+node14 -> symbol_state [label = "name" fontsize = 8]
+node15 -> node14 [label = "returned" fontsize = 8]
+node32 -> node15 [label = "body" fontsize = 8]
+node31 [ label = "MethodDeclaration"];
+node16 [ label = "BooleanTypeExpression"];
+node31 -> node16 [label = "returnType" fontsize = 8]
+symbol_isOff [label = "isOff" fontname = "Times-Italic" shape = box]
+node31 -> symbol_isOff [label = "name" fontsize = 8]
+node20 [ label = "Return"];
+node19 [ label = "Not"];
+node18 [ label = "FieldAccess"];
+node17 [ label = "Variable"];
+symbol_this [label = "this" fontname = "Times-Italic" shape = box]
+node17 -> symbol_this [label = "name" fontsize = 8]
+node18 -> node17 [label = "receiver" fontsize = 8]
+symbol_state [label = "state" fontname = "Times-Italic" shape = box]
+node18 -> symbol_state [label = "name" fontsize = 8]
+node19 -> node18 [label = "expression" fontsize = 8]
+node20 -> node19 [label = "returned" fontsize = 8]
+node31 -> node20 [label = "body" fontsize = 8]
+node30 [ label = "TestDeclaration"];
+node29 [ label = "LocalScope"];
+node28 [ label = "CommandSeq"];
+node23 [ label = "LocalDeclaration"];
+node21 [ label = "IntTypeExpression"];
+node23 -> node21 [label = "type" fontsize = 8]
+symbol_j [label = "j" fontname = "Times-Italic" shape = box]
+node23 -> symbol_j [label = "name" fontsize = 8]
+node22 [ label = "IntLiteral: 1"];
+node23 -> node22 [label = "initialiser" fontsize = 8]
+node28 -> node23 [label = "first" fontsize = 8]
+node27 [ label = "Assert"];
+node26 [ label = "LessThan"];
+node24 [ label = "Variable"];
+symbol_j [label = "j" fontname = "Times-Italic" shape = box]
+node24 -> symbol_j [label = "name" fontsize = 8]
+node26 -> node24 [label = "left" fontsize = 8]
+node25 [ label = "IntLiteral: 0"];
+node26 -> node25 [label = "right" fontsize = 8]
+node27 -> node26 [label = "assertion" fontsize = 8]
+node28 -> node27 [label = "second" fontsize = 8]
+node29 -> node28 [label = "body" fontsize = 8]
+node30 -> node29 [label = "body" fontsize = 8]
+node31 -> node30 [label = "next" fontsize = 8 style = bold]
+node32 -> node31 [label = "next" fontsize = 8 style = bold]
+node33 -> node32 [label = "next" fontsize = 8 style = bold]
+node34 -> node33 [label = "next" fontsize = 8 style = bold]
+node35 -> node34 [label = "next" fontsize = 8 style = bold]
+node36 -> node35 [label = "next" fontsize = 8 style = bold]
+node37 -> node36 [label = "declarations" fontsize = 8]
+}
